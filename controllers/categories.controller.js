@@ -60,8 +60,8 @@ categories.forEach(element => {
 exports.getAll = (req, res) => {
     res.send(categories)
 }
+
 exports.categoriesbyid =(req, res) => {
   const categorie = categories.find(element => element.id == req.params.id)
   res.send(categorie)
-
 }
